@@ -35,6 +35,10 @@ end
 # 20120604_115213
 gem 'htmlentities'
 
+
+# 20121118_114132
+gem "heroku", "~> 2.33.1"
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

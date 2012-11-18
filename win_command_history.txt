@@ -11,5 +11,22 @@ git init
 g a .
 gitk
 
+	$http://railsapps.github.com/rails-heroku-tutorial.html
+bundle install --without production
+
+!! Can't install heroku :20121118_114132
+REF=> http://stackoverflow.com/questions/6172198/installing-ruby-gems
+
+	=> Solved: REF=> http://www.ruby-forum.com/topic/4407988
+		:20121118_121058
+
+[heroku]
+
+heroku keys:add
+heroku create --stack cedar
+g p heroku master
+heroku rename cosmos-chinese-reader
+heroku open
+
 
 ============EOF============
