@@ -10,5 +10,13 @@
 
 <%= yield %>
 
+<hr />
+
+<%= link_to_unless_current("Lang", {:controller => "langs", :action => "index"}) %>
+<%= link_to_unless_current("Genre", {:controller => "genres", :action => "index"}) %>
+<%= link_to_unless_current("Sub genre", {:controller => "sub_genres", :action => "index"}) %>
+
+<hr />
+
 </body>
 </html>

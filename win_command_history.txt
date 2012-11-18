@@ -1,3 +1,5 @@
+cd C:\WORKS\WS\Rails\TR
+
 rails new TR --skip-bundle
 
 copy C:\WORKS\WS\Rails\ChineseReader\.project .
@@ -22,11 +24,24 @@ REF=> http://stackoverflow.com/questions/6172198/installing-ruby-gems
 
 [heroku]
 
-heroku keys:add
-heroku create --stack cedar
-g p heroku master
-heroku rename cosmos-chinese-reader
-heroku open
+*heroku keys:add
+*heroku create --stack cedar
+*g p heroku master
+*heroku rename cosmos-tr
+*heroku open
+[/]
 
+*rails s
+
+[rails]
+
+*rails generate scaffold Lang name:string
+*bundle exec rake db:migrate
+
+*rails generate scaffold Genre name:string
+*bundle exec rake db:migrate
+
+rails generate scaffold SubGenre name:string genre_id:integer
+bundle exec rake db:migrate
 
 ============EOF============
