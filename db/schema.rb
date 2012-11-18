@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121118041048) do
+ActiveRecord::Schema.define(:version => 20121118042440) do
 
   create_table "genres", :force => true do |t|
     t.string   "name"
@@ -28,6 +28,27 @@ ActiveRecord::Schema.define(:version => 20121118041048) do
   create_table "sub_genres", :force => true do |t|
     t.string   "name"
     t.integer  "genre_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "texts", :force => true do |t|
+    t.text     "text"
+    t.string   "url"
+    t.integer  "lang_id"
+    t.integer  "genre_id"
+    t.string   "sub_genre_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "word_sets", :force => true do |t|
+    t.string   "word_a"
+    t.string   "word_b"
+    t.string   "word_c"
+    t.integer  "lang_id"
+    t.integer  "text_id"
+    t.string   "text_ids"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

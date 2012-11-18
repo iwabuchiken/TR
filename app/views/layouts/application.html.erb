@@ -16,6 +16,11 @@
 <%= link_to_unless_current("Genre", {:controller => "genres", :action => "index"}) %>
 <%= link_to_unless_current("Sub genre", {:controller => "sub_genres", :action => "index"}) %>
 
+<%= link_to_unless_current("Text", 
+					{:controller => "texts", :action => "index"}) %>
+<%= link_to_unless_current("Word set",
+					{:controller => "word_sets", :action => "index"}) %>
+
 <hr />
 
 </body>

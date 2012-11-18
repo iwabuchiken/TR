@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Word a:</b>
+  <%= @word_set.word_a %>
+</p>
+
+<p>
+  <b>Word b:</b>
+  <%= @word_set.word_b %>
+</p>
+
+<p>
+  <b>Word c:</b>
+  <%= @word_set.word_c %>
+</p>
+
+<p>
+  <b>Lang:</b>
+  <%= @word_set.lang_id %>
+</p>
+
+<p>
+  <b>Text:</b>
+  <%= @word_set.text_id %>
+</p>
+
+<p>
+  <b>Text ids:</b>
+  <%= @word_set.text_ids %>
+</p>
+
+
+<%= link_to 'Edit', edit_word_set_path(@word_set) %> |
+<%= link_to 'Back', word_sets_path %>

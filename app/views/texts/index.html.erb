@@ -1,0 +1,31 @@
+<h1>Listing texts</h1>
+
+<table>
+  <tr>
+    <th>Text</th>
+    <th>Url</th>
+    <th>Lang</th>
+    <th>Genre</th>
+    <th>Sub genre</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @texts.each do |text| %>
+  <tr>
+    <td><%= text.text %></td>
+    <td><%= text.url %></td>
+    <td><%= text.lang_id %></td>
+    <td><%= text.genre_id %></td>
+    <td><%= text.sub_genre_id %></td>
+    <td><%= link_to 'Show', text %></td>
+    <td><%= link_to 'Edit', edit_text_path(text) %></td>
+    <td><%= link_to 'Destroy', text, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Text', new_text_path %>

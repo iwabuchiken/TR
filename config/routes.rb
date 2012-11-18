@@ -1,4 +1,8 @@
 TR::Application.routes.draw do
+  resources :word_sets
+
+  resources :texts
+
   resources :sub_genres
 
   resources :genres

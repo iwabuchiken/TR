@@ -41,7 +41,15 @@ REF=> http://stackoverflow.com/questions/6172198/installing-ruby-gems
 *rails generate scaffold Genre name:string
 *bundle exec rake db:migrate
 
-rails generate scaffold SubGenre name:string genre_id:integer
-bundle exec rake db:migrate
+*rails generate scaffold SubGenre name:string genre_id:integer
+*bundle exec rake db:migrate
+
+*rails generate scaffold Text text:text url:string lang_id:integer genre_id:integer sub_genre_id::integer
+*bundle exec rake db:migrate
+
+*rails generate scaffold WordSet word_a:string word_b:string word_c:string lang_id:integer text_id:integer text_ids:string
+*bundle exec rake db:migrate
+
+
 
 ============EOF============
