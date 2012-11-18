@@ -1,0 +1,15 @@
+rails new TR --skip-bundle
+
+copy C:\WORKS\WS\Rails\ChineseReader\.project .
+
+#EDIT .project
+
+copy C:\WORKS\WS\Rails\ChineseReader\win_command_history.txt .
+
+[git]
+git init
+g a .
+gitk
+
+
+============EOF============
